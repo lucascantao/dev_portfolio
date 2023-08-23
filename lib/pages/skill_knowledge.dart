@@ -8,7 +8,7 @@ class SkillKnowledge extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.purple,
-      height: MediaQuery.of(context).size.height * 0.9,
+      height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,

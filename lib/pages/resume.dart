@@ -7,7 +7,7 @@ class Resume extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      height: MediaQuery.of(context).size.height * 0.9,
+      height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       child: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
