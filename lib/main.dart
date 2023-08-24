@@ -103,8 +103,8 @@ class _MenuNavigationState extends State<MenuNavigation> {
                       duration: const Duration(milliseconds: 500));
                 },
                 icon: Icon(
-                  selection == 1 ? Icons.square_sharp : Icons.square_outlined,
-                  color: Colors.amber,
+                  selection == 1 ? Icons.square_sharp : Icons.square_sharp,
+                  color: selection == 1 ? Colors.amber[900] : Colors.black,
                 )),
             IconButton(
               onPressed: () async {
@@ -115,8 +115,8 @@ class _MenuNavigationState extends State<MenuNavigation> {
                     duration: const Duration(milliseconds: 500));
               },
               icon: Icon(
-                  selection == 2 ? Icons.square_sharp : Icons.square_outlined,
-                  color: Colors.amber),
+                  selection == 2 ? Icons.square_sharp : Icons.square_sharp,
+                  color: selection == 2 ? Colors.amber[900] : Colors.black),
             ),
             IconButton(
               onPressed: () async {
@@ -127,8 +127,8 @@ class _MenuNavigationState extends State<MenuNavigation> {
                     duration: const Duration(milliseconds: 500));
               },
               icon: Icon(
-                  selection == 3 ? Icons.square_sharp : Icons.square_outlined,
-                  color: Colors.amber),
+                  selection == 3 ? Icons.square_sharp : Icons.square_sharp,
+                  color: selection == 3 ? Colors.amber[900] : Colors.black),
             ),
             IconButton(
               onPressed: () async {
@@ -139,21 +139,9 @@ class _MenuNavigationState extends State<MenuNavigation> {
                     duration: const Duration(milliseconds: 500));
               },
               icon: Icon(
-                  selection == 4 ? Icons.square_sharp : Icons.square_outlined,
-                  color: Colors.amber),
+                  selection == 4 ? Icons.square_sharp : Icons.square_sharp,
+                  color: selection == 4 ? Colors.amber[900] : Colors.black),
             ),
-            IconButton(
-              onPressed: () async {
-                setState(() {
-                  selection = 5;
-                });
-                await Scrollable.ensureVisible(widget.keys[4].currentContext!,
-                    duration: const Duration(milliseconds: 500));
-              },
-              icon: Icon(
-                  selection == 5 ? Icons.square_sharp : Icons.square_outlined,
-                  color: Colors.amber),
-            )
           ],
         ),
       ),
