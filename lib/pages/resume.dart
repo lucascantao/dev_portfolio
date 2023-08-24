@@ -17,7 +17,7 @@ class Resume extends StatelessWidget {
             Flexible(
                 flex: 3,
                 child: Container(
-                  color: Colors.amber[100],
+                  color: Colors.black87,
                   child: const Center(child: Text("Resume")),
                 )),
             Flexible(
@@ -25,21 +25,24 @@ class Resume extends StatelessWidget {
                 child: Container(
                   padding: const EdgeInsets.symmetric(horizontal: 128),
                   height: MediaQuery.of(context).size.height,
-                  color: Colors.amber[50],
+                  color: Colors.white,
                   child: Center(
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
                           "I AM A ",
-                          style: GoogleFonts.blackOpsOne(
+                          style: GoogleFonts.leagueSpartan(
                               textStyle: TextStyle(
-                                  fontSize: 48, color: Colors.amber[300])),
+                                  fontSize: 48, color: Colors.amber[900])),
                         ),
                         Text(
                           "DEVELOPER",
-                          style: GoogleFonts.blackOpsOne(
+                          style: GoogleFonts.leagueSpartan(
                               textStyle: const TextStyle(
-                                  fontSize: 48, color: Colors.black87)),
+                                  fontSize: 48,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.black87)),
                         ),
                       ],
                     ),
