@@ -15,11 +15,30 @@ class Resume extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Flexible(
-                flex: 3,
-                child: Container(
-                  color: Colors.black87,
-                  child: const Center(child: Text("Resume")),
-                )),
+              flex: 3,
+              child: Container(
+                height: MediaQuery.of(context).size.height,
+                width: MediaQuery.of(context).size.width,
+                color: Colors.black87,
+                child: const Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    CircleAvatar(
+                      radius: 48,
+                      backgroundColor: Colors.amber,
+                    ),
+                    SizedBox(
+                      height: 24,
+                    ),
+                    Text("NAME"),
+                    SizedBox(
+                      height: 24,
+                    ),
+                    Text("ABOUT ME")
+                  ],
+                ),
+              ),
+            ),
             Flexible(
                 flex: 7,
                 child: Container(
