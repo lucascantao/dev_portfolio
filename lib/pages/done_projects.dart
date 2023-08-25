@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DoneProjects extends StatelessWidget {
   const DoneProjects({super.key});
@@ -14,12 +15,23 @@ class DoneProjects extends StatelessWidget {
           Flexible(
               flex: 1,
               child: Container(
-                color: Colors.purple[600],
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height,
+                color: Colors.black87,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("MEUS PROJETOS",
+                      style: GoogleFonts.leagueSpartan(
+                          textStyle: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 48,
+                              fontWeight: FontWeight.bold))),
+                ),
               )),
           Flexible(
               flex: 9,
               child: Container(
-                color: Colors.purple[500],
+                color: Colors.white,
               ))
         ],
       ),
