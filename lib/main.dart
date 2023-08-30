@@ -1,11 +1,11 @@
 import 'package:estoque/pages/about.dart';
 import 'package:estoque/pages/footer.dart';
-import 'package:estoque/pages/skill_knowledge.dart';
+// import 'package:estoque/pages/skill_knowledge.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
 
-import 'menu_navigation.dart';
+// import 'menu_navigation.dart';
 import 'navigation_menu.dart';
 import 'pages/done_projects.dart';
 import 'pages/resume.dart';

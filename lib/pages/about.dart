@@ -5,7 +5,7 @@ class About extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
+      color: const Color.fromARGB(255, 18, 24, 38),
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       child: const Column(

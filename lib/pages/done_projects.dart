@@ -6,36 +6,10 @@ class DoneProjects extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Flexible(
-              flex: 1,
-              child: Container(
-                width: MediaQuery.of(context).size.width,
-                height: MediaQuery.of(context).size.height,
-                color: Colors.black87,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text("MEUS PROJETOS",
-                      style: GoogleFonts.leagueSpartan(
-                          textStyle: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 48,
-                              fontWeight: FontWeight.bold))),
-                ),
-              )),
-          Flexible(
-              flex: 9,
-              child: Container(
-                color: Colors.white,
-              ))
-        ],
-      ),
-    );
+        color: const Color.fromARGB(255, 18, 24, 38),
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child: Center(child: Text("projects")));
   }
 }
 

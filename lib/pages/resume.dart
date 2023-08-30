@@ -10,7 +10,7 @@ class Resume extends StatelessWidget {
         color: const Color.fromARGB(255, 18, 24, 38),
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child: Column(
+        child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
