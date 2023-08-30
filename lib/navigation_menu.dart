@@ -27,46 +27,61 @@ class _NavigationMenu extends State<NavigationMenu> {
         ),
         Row(
           children: [
-            TextButton(
-                onPressed: () async {
-                  setState(() {
-                    selection = 1;
-                  });
-                  await Scrollable.ensureVisible(widget.keys[0].currentContext!,
-                      duration: const Duration(milliseconds: 500));
-                },
-                child: Text(
-                  "Home",
-                  style: TextStyle(
-                      fontWeight:
-                          selection == 1 ? FontWeight.bold : FontWeight.normal),
-                )),
-            TextButton(
-                onPressed: () async {
-                  setState(() {
-                    selection = 2;
-                  });
-                  await Scrollable.ensureVisible(widget.keys[1].currentContext!,
-                      duration: const Duration(milliseconds: 500));
-                },
-                child: Text("Projetos",
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () async {
+                    setState(() {
+                      selection = 1;
+                    });
+                    await Scrollable.ensureVisible(
+                        widget.keys[0].currentContext!,
+                        duration: const Duration(milliseconds: 500));
+                  },
+                  child: Text(
+                    "Home",
                     style: TextStyle(
-                        fontWeight: selection == 2
-                            ? FontWeight.bold
-                            : FontWeight.normal))),
-            TextButton(
-                onPressed: () async {
-                  setState(() {
-                    selection = 3;
-                  });
-                  await Scrollable.ensureVisible(widget.keys[2].currentContext!,
-                      duration: const Duration(milliseconds: 500));
-                },
-                child: Text("Sobre",
-                    style: TextStyle(
-                        fontWeight: selection == 3
-                            ? FontWeight.bold
-                            : FontWeight.normal))),
+                        fontSize: 18,
+                        fontWeight:
+                            selection == 1 ? FontWeight.bold : FontWeight.w100),
+                  )),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () async {
+                    setState(() {
+                      selection = 2;
+                    });
+                    await Scrollable.ensureVisible(
+                        widget.keys[1].currentContext!,
+                        duration: const Duration(milliseconds: 500));
+                  },
+                  child: Text("Projetos",
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: selection == 2
+                              ? FontWeight.bold
+                              : FontWeight.w100))),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextButton(
+                  onPressed: () async {
+                    setState(() {
+                      selection = 3;
+                    });
+                    await Scrollable.ensureVisible(
+                        widget.keys[2].currentContext!,
+                        duration: const Duration(milliseconds: 500));
+                  },
+                  child: Text("Sobre",
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: selection == 3
+                              ? FontWeight.bold
+                              : FontWeight.w100))),
+            ),
           ],
         )
       ]),
