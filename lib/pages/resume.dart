@@ -7,90 +7,17 @@ class Resume extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.white,
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
-      child: Stack(children: [
-        Row(
+        color: const Color.fromARGB(255, 18, 24, 38),
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Flexible(
-              flex: 3,
-              child: Container(
-                height: MediaQuery.of(context).size.height,
-                width: MediaQuery.of(context).size.width,
-                color: Colors.black87,
-                child: const Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    CircleAvatar(
-                      radius: 48,
-                      backgroundColor: Colors.amber,
-                    ),
-                    SizedBox(
-                      height: 24,
-                    ),
-                    Text("NAME"),
-                    SizedBox(
-                      height: 24,
-                    ),
-                    Text("ABOUT ME")
-                  ],
-                ),
-              ),
-            ),
-            Flexible(
-                flex: 7,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 128),
-                  height: MediaQuery.of(context).size.height,
-                  color: Colors.white,
-                  child: Center(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          "I AM A ",
-                          style: GoogleFonts.leagueSpartan(
-                              textStyle: TextStyle(
-                                  fontSize: 48, color: Colors.amber[900])),
-                        ),
-                        Text(
-                          "DEVELOPER",
-                          style: GoogleFonts.leagueSpartan(
-                              textStyle: const TextStyle(
-                                  fontSize: 48,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black87)),
-                        ),
-                      ],
-                    ),
-                  ),
-                )),
+            Text("HEY, THERE"),
+            Text("I'm Lucas"),
+            Text("I am a programmer and web developer")
           ],
-        ),
-        SizedBox(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Padding(
-                    padding: const EdgeInsets.all(24.0),
-                    child: IconButton(
-                      onPressed: () async {
-                        await Scrollable.ensureVisible(nextKey.currentContext!,
-                            duration: const Duration(milliseconds: 500));
-                      },
-                      icon: const Icon(
-                        Icons.arrow_downward,
-                        color: Colors.amber,
-                      ),
-                    )),
-              ],
-            ))
-      ]),
-    );
+        ));
   }
 }

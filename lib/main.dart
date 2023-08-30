@@ -6,6 +6,7 @@ import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:go_router/go_router.dart';
 
 import 'menu_navigation.dart';
+import 'navigation_menu.dart';
 import 'pages/done_projects.dart';
 import 'pages/resume.dart';
 
@@ -58,8 +59,7 @@ class Home extends StatelessWidget {
               nextKey: keys[1],
             ),
             DoneProjects(key: keys[1]),
-            SkillKnowledge(key: keys[2]),
-            About(key: keys[3]),
+            About(key: keys[2]),
             const Footer()
           ]),
         ),
@@ -67,9 +67,9 @@ class Home extends StatelessWidget {
             width: MediaQuery.of(context).size.width,
             height: MediaQuery.of(context).size.height,
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [MenuNavigation(keys: keys)],
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [NavigationMenu(keys: keys)],
             ))
       ]),
     );
