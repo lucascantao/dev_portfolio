@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NavigationMenu extends StatefulWidget {
   const NavigationMenu({super.key, required this.keys});
@@ -20,10 +21,16 @@ class _NavigationMenu extends State<NavigationMenu> {
       color: const Color.fromARGB(255, 18, 24, 38),
       height: size.height * 0.1,
       width: size.width,
-      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+      child: Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
         TextButton(
           onPressed: () {},
-          child: const Text("Lucas Cantão"),
+          child: Text(
+            "Lucas Cantão",
+            style: GoogleFonts.leagueSpartan(
+                color: const Color.fromARGB(255, 39, 255, 203),
+                fontSize: 20,
+                fontStyle: FontStyle.italic),
+          ),
         ),
         Row(
           children: [
@@ -40,10 +47,13 @@ class _NavigationMenu extends State<NavigationMenu> {
                   },
                   child: Text(
                     "Home",
-                    style: TextStyle(
-                        fontSize: 18,
-                        fontWeight:
-                            selection == 1 ? FontWeight.bold : FontWeight.w100),
+                    style: selection == 1
+                        ? (const TextStyle(
+                            color: Color.fromARGB(255, 39, 255, 203),
+                            fontWeight: FontWeight.bold))
+                        : (const TextStyle(
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            fontWeight: FontWeight.normal)),
                   )),
             ),
             Padding(
@@ -57,12 +67,16 @@ class _NavigationMenu extends State<NavigationMenu> {
                         widget.keys[1].currentContext!,
                         duration: const Duration(milliseconds: 500));
                   },
-                  child: Text("Projetos",
-                      style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: selection == 2
-                              ? FontWeight.bold
-                              : FontWeight.w100))),
+                  child: Text(
+                    "Projetos",
+                    style: selection == 2
+                        ? (const TextStyle(
+                            color: Color.fromARGB(255, 39, 255, 203),
+                            fontWeight: FontWeight.bold))
+                        : (const TextStyle(
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            fontWeight: FontWeight.normal)),
+                  )),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -75,12 +89,16 @@ class _NavigationMenu extends State<NavigationMenu> {
                         widget.keys[2].currentContext!,
                         duration: const Duration(milliseconds: 500));
                   },
-                  child: Text("Sobre",
-                      style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: selection == 3
-                              ? FontWeight.bold
-                              : FontWeight.w100))),
+                  child: Text(
+                    "Sobre",
+                    style: selection == 3
+                        ? (const TextStyle(
+                            color: Color.fromARGB(255, 39, 255, 203),
+                            fontWeight: FontWeight.bold))
+                        : (const TextStyle(
+                            color: Color.fromARGB(255, 255, 255, 255),
+                            fontWeight: FontWeight.normal)),
+                  )),
             ),
           ],
         )

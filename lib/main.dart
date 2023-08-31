@@ -53,15 +53,18 @@ class Home extends StatelessWidget {
       key: scaffoldKey,
       body: Stack(children: [
         SingleChildScrollView(
-          child: Column(children: [
-            Resume(
-              key: keys[0],
-              nextKey: keys[1],
-            ),
-            DoneProjects(key: keys[1]),
-            About(key: keys[2]),
-            const Footer()
-          ]),
+          child: Container(
+            color: const Color.fromARGB(255, 18, 24, 38),
+            child: Column(children: [
+              Resume(
+                key: keys[0],
+                nextKey: keys[1],
+              ),
+              DoneProjects(key: keys[1]),
+              About(key: keys[2]),
+              const Footer()
+            ]),
+          ),
         ),
         SizedBox(
             width: MediaQuery.of(context).size.width,
