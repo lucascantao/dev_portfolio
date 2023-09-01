@@ -21,15 +21,31 @@ class Resume extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 8.0),
+                      child: Text(
+                        "Hello, i'm Lucas",
+                        style: GoogleFonts.leagueSpartan(
+                          fontSize: 20,
+                          color: const Color.fromARGB(255, 39, 255, 203),
+                        ),
+                      ),
+                    ),
                     Text(
                       "Web Developer",
                       style: GoogleFonts.leagueSpartan(
                           color: Colors.white,
-                          fontSize: 48,
+                          fontSize: 64,
                           fontWeight: FontWeight.bold),
                     ),
-                    const Text(
-                        "Eu sou estudante de Ciência da Computação focado na área de desenvolvimento de software Mobile e Web"),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16.0),
+                      child: Text(
+                        "Eu sou estudante de Ciência da Computação focado na área de desenvolvimento de software Mobile e Web",
+                        style: GoogleFonts.leagueSpartan(
+                            fontSize: 24, fontWeight: FontWeight.w100),
+                      ),
+                    ),
                     MaterialButton(
                       onPressed: () {},
                       padding: const EdgeInsets.all(20),
@@ -43,11 +59,15 @@ class Resume extends StatelessWidget {
                   ],
                 ),
               ),
+              const SizedBox(
+                width: 24,
+              ),
               const CircleAvatar(
-                radius: 90,
+                radius: 128,
                 backgroundColor: Color.fromARGB(255, 39, 255, 203),
                 child: CircleAvatar(
-                  radius: 88,
+                  backgroundImage: AssetImage('images/avatar_icon.jpeg'),
+                  radius: 125,
                 ),
               )
             ],

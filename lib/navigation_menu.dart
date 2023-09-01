@@ -11,7 +11,7 @@ class NavigationMenu extends StatefulWidget {
 }
 
 class _NavigationMenu extends State<NavigationMenu> {
-  int selection = 0;
+  int selection = 1;
 
   @override
   Widget build(BuildContext context) {

@@ -10,7 +10,7 @@ class MenuNavigation extends StatefulWidget {
 }
 
 class _MenuNavigationState extends State<MenuNavigation> {
-  int selection = 0;
+  int selection = 1;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
