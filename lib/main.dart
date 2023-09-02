@@ -56,13 +56,13 @@ class Home extends StatelessWidget {
           child: Container(
             color: const Color.fromARGB(255, 18, 24, 38),
             child: Column(children: [
-              // Resume(
-              //   key: keys[0],
-              //   nextKey: keys[1],
-              // ),
+              Resume(
+                key: keys[0],
+                nextKey: keys[1],
+              ),
               DoneProjects(key: keys[1]),
               About(key: keys[2]),
-              const Footer()
+              // const Footer()
             ]),
           ),
         ),
@@ -72,7 +72,7 @@ class Home extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
-              // children: [NavigationMenu(keys: keys)],
+              children: [NavigationMenu(keys: keys)],
             ))
       ]),
     );

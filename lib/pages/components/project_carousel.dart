@@ -12,27 +12,25 @@ class ProjectCarousel extends StatelessWidget {
         carouselController: controller,
         items: const [
           CardProject(
-              title: "Projeto 1",
-              description:
-                  "Fiz este projeto com o intuito de aprender e testar minha habilidades com react",
-              date: "19, mar 2021",
-              link: "https://github.com"),
+            title: "MyCare App",
+            description:
+                "Fiz este projeto com o intuito de aprender e praticar uso de serviços e estados com React",
+            date: "11 Mai. 2021",
+            link: "https://github.com/lucascantao/mycareapp",
+            pathToImage: 'images/card_banner_0.png',
+          ),
           CardProject(
-              title: "Projeto 2",
-              description:
-                  "Fiz este projeto com o intuito de aprender e testar minha habilidades com react",
-              date: "19, mar 2021",
-              link: "https://github.com"),
-          CardProject(
-              title: "Projeto 3",
-              description:
-                  "Fiz este projeto com o intuito de aprender e testar minha habilidades com react",
-              date: "19, mar 2021",
-              link: "https://github.com"),
+            title: "Epic Games Clone",
+            description:
+                "Esse projeto foi feito para praticar organização e posicionamento de layouts com React",
+            date: "29 Dez 2020",
+            link: "https://github.com/lucascantao/epic-clone",
+            pathToImage: "images/card_banner_1.png",
+          ),
         ],
         options: CarouselOptions(
-          height: MediaQuery.of(context).size.height * 0.60,
-          autoPlay: false,
-        ));
+            height: MediaQuery.of(context).size.height * 0.60,
+            autoPlay: true,
+            pauseAutoPlayOnManualNavigate: true));
   }
 }
